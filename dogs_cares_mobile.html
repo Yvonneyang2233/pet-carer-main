@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs Carer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #35c935;
+    }
+
+    .overlay {
+      background-color: lightcyan;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #2e8b57;
+      margin-bottom: 20px;
+    }
+
+    .input-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .card button {
+      display: block;
+      margin: 12px auto 0 auto;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card button:hover {
+      background-color: #3cb371;
+    }
+
+    @media (max-width: 600px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .card img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .card button {
+        font-size: 13px;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay">
+  <h1>Dogs Cares</h1>
+
+  <div class="input-section">
+    <input type="text" placeholder="搜索">
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="記賬">
+      <button onclick="location.href='https://dog-expense-tracker-a3es8s6rdzozwoyzw6du5s.streamlit.app/'">記賬</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="日記">
+      <button onclick="location.href='https://w9wx6w.csb.app/'">日記</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="地圖">
+      <button onclick="location.href='https://pet-map.onrender.com/'">地圖</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="小助手">
+      <button onclick="location.href='https://www.chatbase.co/chatbot-iframe/7_SpwQHUqYr02YE5aDDgm'">小助手</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
